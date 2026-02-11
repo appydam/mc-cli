@@ -4,8 +4,20 @@ Friendly command-line interface for the Mission Control API. Manage tasks, send 
 
 ## Installation
 
+### From npm (when published)
+
 ```bash
 npm install -g @appydam/mc-cli
+```
+
+### From source
+
+```bash
+git clone https://github.com/appydam/mc-cli.git
+cd mc-cli
+npm install
+npm run build
+npm link  # makes `mc` command globally available
 ```
 
 ## Setup
