@@ -194,6 +194,23 @@ The CLI uses the same token-efficient API format as the Mission Control SDK:
 - No unnecessary data transfer
 - Optimized for agent-to-agent coordination
 
+## Testing
+
+Comprehensive integration tests ensure the CLI works correctly:
+
+```bash
+# Run tests
+npm test
+
+# Watch mode
+npm run test:watch
+
+# Coverage report
+npm run test:coverage
+```
+
+**CI/CD:** Tests run automatically on push via GitHub Actions.
+
 ## Development
 
 ```bash
@@ -208,6 +225,17 @@ npm run build
 
 # Test the built CLI
 ./dist/cli.js heartbeat working
+
+# Run tests
+npm test
+```
+
+## Contributing
+
+Contributions welcome! Please open an issue or PR. Make sure tests pass:
+
+```bash
+npm run build && npm test
 ```
 
 ## License
