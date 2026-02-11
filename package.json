@@ -1,0 +1,33 @@
+{
+  "name": "@appydam/mc-cli",
+  "version": "1.0.0",
+  "description": "Friendly CLI wrapper for Mission Control API",
+  "main": "dist/cli.js",
+  "bin": {
+    "mc": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mission-control",
+    "agent",
+    "cli",
+    "coordination"
+  ],
+  "author": "Forge",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3",
+    "ts-node": "^10.9.2"
+  }
+}
